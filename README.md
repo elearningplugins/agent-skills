@@ -133,12 +133,14 @@ These skills are experiments in doing exactly that.
 
 # Skills
 
-| Skill                                  | What it teaches the agent                                                                                                                                                                                                  |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`pr-quality`](./pr-quality)           | Prepare and review pull requests using exact diff accounting, testing evidence, blast radius analysis, implementation review, and questions designed to challenge whether the proposed solution is actually the right one. |
-| [`qa-unit-testing`](./qa-unit-testing) | Build stronger TypeScript unit tests by combining example based tests, fast-check property testing, and Stryker mutation analysis to find gaps ordinary coverage metrics miss.                                             |
+| Skill | Category | What it teaches the agent | Tools |
+| --- | --- | --- | --- |
+| [`pr-quality`](./skills/pr-quality) | Code review | Prepare and review pull requests using exact diff accounting, testing evidence, blast radius analysis, implementation review, and questions designed to challenge whether the proposed solution is actually the right one. | git |
+| [`qa-unit-testing`](./skills/qa-unit-testing) | Testing | Build stronger TypeScript unit tests by combining example-based tests, fast-check property testing, and Stryker mutation analysis to find gaps ordinary coverage metrics miss. | Jest/Vitest, fast-check, Stryker |
 
 More skills will be added as Brian continues converting useful engineering practices into repeatable agent workflows.
+
+Skills live under [`skills/`](./skills) in the standard Agent Skills layout (`skills/*/SKILL.md`), with optional `scripts/`, `references/`, and `assets/`.
 
 ## `pr-quality`
 
@@ -234,7 +236,9 @@ gh skill install elearningplugins/brians-agent-skills qa-unit-testing
 git clone https://github.com/elearningplugins/brians-agent-skills.git
 ```
 
-Then point the agent at the appropriate skill directory.
+Then point the agent at the appropriate skill directory under `skills/<skill-name>/`.
+
+License: [MIT](./LICENSE).
 
 ---
 

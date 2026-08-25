@@ -1,6 +1,13 @@
 ---
 name: qa-unit-testing
 description: Builds and strengthens TypeScript unit tests with example-based tests, fast-check property testing, and Stryker mutation analysis. Use when adding or reviewing unit tests, fixing logic bugs, testing pure functions, bootstrapping tests in an under-tested repository, or determining whether existing coverage actually detects defects.
+license: MIT
+compatibility: >
+  Designed for TypeScript/JavaScript repositories. Mutation testing
+  requires Node.js and a Stryker-compatible test runner. Property-based
+  testing uses fast-check.
+metadata:
+  author: Brian Batt
 ---
 
 # QA Unit Testing
