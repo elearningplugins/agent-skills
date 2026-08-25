@@ -1,6 +1,9 @@
 ---
 name: pr-quality
 description: Creates and reviews high-signal pull requests using exact diff accounting, evidence-backed testing, behavior/performance/risk analysis, adjacent-behavior and shared-consumer blast-radius checks, and staff-level solution review. Use when preparing, updating, or reviewing a PR; drafting a PR body; deciding whether a change is ready for review; or checking whether the chosen solution is the right one rather than merely correct.
+license: MIT
+metadata:
+  author: Brian Batt
 ---
 
 # PR Quality
@@ -43,22 +46,13 @@ State the problem before describing the implementation. Determine:
 
 Never invent a ticket number or title.
 
-### Legacy Jira format
+### Issue references
 
-When working in a repository that uses the recovered `DEV-XXXXX` convention, format each ticket exactly as:
+Use the repository's existing issue tracker conventions.
 
-```text
-Fixes [DEV-XXXXX] — <ticket title>
-```
+Never invent an issue identifier or title.
 
-One ticket per line. Example:
-
-```text
-Fixes [DEV-16544] — Coherence "split by tags": purple shadow/range band shows impossible values far above actual data
-Fixes [DEV-16543] — Coherence "split by tags": series labeled with stream name instead of tag
-```
-
-For GitHub Issues, Linear, or another tracker, follow that repository's normal closing/reference syntax instead.
+If the repository uses automatic closing syntax, follow its established format. Otherwise reference the issue without implying it will be automatically closed.
 
 ## 2. Account for the diff exactly
 

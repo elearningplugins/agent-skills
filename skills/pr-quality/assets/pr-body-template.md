@@ -12,9 +12,7 @@
 
 ## Tickets / issues
 
-<!-- Follow repository convention. Legacy DEV example:
-Fixes [DEV-12345] — Exact ticket title
--->
+<!-- Follow the repository's issue tracker convention. Never invent an ID or title. -->
 
 ## Lines of code
 
