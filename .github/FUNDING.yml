@@ -1,0 +1,5 @@
+# GitHub Sponsors button + corporate advertise fallback.
+# Individuals → github.com/sponsors/elearningplugins
+# Companies → briansjobsearch.com/advertise.html
+github: [elearningplugins]
+custom: ["https://briansjobsearch.com/advertise.html"]
