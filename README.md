@@ -295,6 +295,8 @@ This repository is where Brian is turning the engineering practices he wants an 
 * [Brian's Job Search](https://briansjobsearch.com)
 * [Agent Skills specification](https://agentskills.io)
 * [Brian Batt on LinkedIn](https://www.linkedin.com/in/brianbatt/)
+* [Skill design principles](./docs/skill-design-principles.md)
+* [AGENTS.md](./AGENTS.md) · [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ---
 
