@@ -288,6 +288,7 @@ This repository is where Brian is turning the engineering practices he wants an 
 
 ## Related
 
+* [Brian Batt on GitHub](https://github.com/elearningplugins)
 * [Brian's Job Search](https://briansjobsearch.com)
 * [Agent Skills specification](https://agentskills.io)
 * [Brian Batt on LinkedIn](https://www.linkedin.com/in/brianbatt/)
