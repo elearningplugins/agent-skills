@@ -12,28 +12,25 @@ The goal is simple:
 
 ## Where these skills come from
 
-Brian's career has crossed a lot of the boundaries that normally separate software teams:
+Brian's career has crossed the boundaries that normally separate software teams:
 
-* Software engineering
-* Quality engineering
-* Engineering management
-* Test architecture and automation
-* CI/CD and release engineering
-* Production debugging
-* Incident investigation
-* Developer productivity
-* Reliability and observability
-* Customer engineering and support
+* Production software engineering (TypeScript / React / APIs / SDKs)
+* Release engineering and production deploys
+* Reliability, incident response, and customer engineering
+* Quality engineering and test architecture
+* CI/CD, developer tooling, and automation
 * Performance and cost analysis
-* AI assisted engineering
+* Robotics edge-runtime / build-toolchain continuity
+* AI-assisted engineering and coding-agent orchestration
+* Engineering management and technical leadership
 
 That breadth matters because most difficult software problems do not stay inside one of those boxes.
 
 A production failure may start as a customer report, require log and database analysis, expose a code defect, need a regression test, uncover a weak CI gate, and eventually result in a release process change.
 
-The skills in this repository try to capture that kind of end to end thinking.
+The skills in this repository try to capture that kind of end-to-end thinking.
 
-At Formant alone, Brian authored more than 1,000 pull requests, reviewed more than 400 changes from other engineers, built dozens of engineering automations, owned production releases, investigated production failures, contributed production code, built testing infrastructure, and experimented extensively with AI driven engineering workflows.
+At Formant (official title QA Manager), Brian's work expanded into hands-on engineering systems ownership: authoring and shipping production code, owning production releases and hotfixes, investigating and fixing production failures, building release/test/AI automation, and reviewing hundreds of changes from other engineers (1,000+ authored PRs; 400+ reviews).
 
 Before that, Brian spent fourteen years at Articulate as the company grew from a small startup into a large software company, eventually working as an Engineering Manager.
 
