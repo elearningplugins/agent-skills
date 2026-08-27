@@ -130,10 +130,11 @@ These skills are experiments in doing exactly that.
 
 # Skills
 
-| Skill                                  | What it teaches the agent                                                                                                                                                                                                  |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`pr-quality`](./pr-quality)           | Prepare and review pull requests using exact diff accounting, testing evidence, blast radius analysis, implementation review, and questions designed to challenge whether the proposed solution is actually the right one. |
-| [`qa-unit-testing`](./qa-unit-testing) | Build stronger TypeScript unit tests by combining example based tests, fast-check property testing, and Stryker mutation analysis to find gaps ordinary coverage metrics miss.                                             |
+| Skill                                      | What it teaches the agent                                                                                                                                                                                                  |
+| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`pr-quality`](./pr-quality)               | Prepare and review pull requests using exact diff accounting, testing evidence, blast radius analysis, implementation review, and questions designed to challenge whether the proposed solution is actually the right one. |
+| [`qa-unit-testing`](./qa-unit-testing)     | Build stronger TypeScript unit tests by combining example based tests, fast-check property testing, and Stryker mutation analysis to find gaps ordinary coverage metrics miss.                                             |
+| [`github-pr-mockup`](./github-pr-mockup)   | Build a local GitHub-style PR HTML mockup (title, description, full diff) so you can review a contribution before it ever reaches GitHub — especially useful for open-source forks.                                        |
 
 More skills will be added as Brian continues converting useful engineering practices into repeatable agent workflows.
 
@@ -175,6 +176,19 @@ A test suite that executes every line but survives meaningful mutations still ha
 The goal is not maximum test count or maximum coverage.
 
 The goal is tests that catch real defects.
+
+## `github-pr-mockup`
+
+Open-source contributions often need a private review pass before a PR is public.
+
+This skill builds a local HTML page that looks like GitHub's pull request UI:
+
+* PR title and Open state
+* Rendered description (Conversation tab)
+* Full unified diff with file sidebar (Files changed tab)
+* Working-tree mode (including untracked) or committed range mode
+
+Use it after drafting a body with `pr-quality`, and before `gh pr create`.
 
 ---
 
@@ -223,6 +237,7 @@ or:
 ```bash
 gh skill install elearningplugins/brians-agent-skills pr-quality
 gh skill install elearningplugins/brians-agent-skills qa-unit-testing
+gh skill install elearningplugins/brians-agent-skills github-pr-mockup
 ```
 
 ## Manual installation
@@ -293,3 +308,12 @@ This repository is where Brian is turning the engineering practices he wants an 
 ---
 
 Created by **Brian Batt**.
+
+## Preview a PR before GitHub
+
+```text
+/github-pr-mockup
+
+Draft a PR description for this branch, then build a GitHub-style HTML mockup
+so I can review the full diff locally before opening anything.
+```
